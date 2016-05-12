@@ -1,0 +1,47 @@
+- Pre-Processing dataset
+- Generating features
+- Training language model
+  - LM for: [ blake carroll shakespeare burgess bryant chesterton  ]
+- Training book/work model
+- Training author model
+
+1. Work/Book Classifier Evaluation:
+- Confusion matrix
+[[24  0  0  0  0  0]
+ [ 0 26  0  0  0  0]
+ [ 0  0 22  0  0  0]
+ [ 1  0  0 28  0  0]
+ [ 0  0  0  0 23  0]
+ [ 0  0  0  0  0 26]]
+
+Precision: 0.993563218391
+Recall   : 0.993333333333
+F1       : 0.993323785655
+
+
+2. Author Classifier Evaluation:
+- Confusion matrix
+[[27  0  0  2  0  0]
+ [ 0 22  0  0  0  1]
+ [ 0  0 26  0  0  0]
+ [ 0  0  0 24  0  0]
+ [ 0  0  0  0 26  0]
+ [ 0  0  0  0  0 22]]
+
+Precision: 0.981209395302
+Recall   : 0.98
+F1       : 0.979971428571
+
+
+3. Predicting next word:
+
+Context: He heard
+Next Word: Blacky
+
+Context: I am
+Next Word: a
+
+Context: I am
+Next Word: glad
+
+[Finished in 54.6s]
